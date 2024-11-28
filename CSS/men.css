@@ -25,3 +25,6 @@ a.div.viewBox {
 .container-page {
     display: flex;
 }
+.foot-text {
+    margin: 20px;
+}
