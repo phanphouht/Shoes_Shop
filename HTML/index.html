@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+   
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS (including Popper for dropdowns, tooltips, etc.) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    
+    <!-- Custom CSS (for additional styling and animations) -->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Smartwatch Store</title>
+  </head>
+
+  <body>
+
+    <header class="header">
+      <div class="header-inner">
+        <div class="container p-lg-0">
+          <nav class="navbar navbar-expand-lg my-navbar">
+            <a class="navbar-brand" href="#">UniqueSole</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon">
+                <i class="fas fa-bars" style="margin:5px 0px 0px 0px;"></i>
+              </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#"><i class="fa-solid fa-house-flag" style="color: #b54f89;"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"style="color: #b54f89;"></i> Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tags" style="color: #b54f89;" viewBox="0 0 16 16">
+                    <path d="M3 2v4.586l7 7L14.586 9l-7-7zM2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586z"/>
+                    <path d="M5.5 5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m0 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M1 7.086a1 1 0 0 0 .293.707L8.75 15.25l-.043.043a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 0 7.586V3a1 1 0 0 1 1-1z"/>
+                  </svg> Pricing</a>  <!--font in bootstrap -->
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-balloon-heart" style="color: #b54f89;" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398"/>
+                  </svg> Resources</a>
+                </li>
+               
+                
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <button type="button" class="btn btn-secondary" style="border-radius: 30px;" >Sign In</button>
+                <li class="nav-item">
+                    <!-- Search Button -->
+                  <button type="button" class="btn btn-secondary" style="border-radius: 30px;" id="open-search-modal" onclick="click()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search-heart-fill" style="color: #b54f89;" viewBox="0 0 16 16">
+                      <path d="M6.5 13a6.47 6.47 0 0 0 3.845-1.258h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1A6.47 6.47 0 0 0 13 6.5 6.5 6.5 0 0 0 6.5 0a6.5 6.5 0 1 0 0 13m0-8.518c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018"/>
+                    </svg>
+                  </button>
+                </li>
+               <!-- Search Modal -->
+            <div class="search-model" id="search-modal">
+              <div class="h-100 d-flex justify-content-center align-items-center">
+                <!-- Close Button -->
+                <div class="search-close-switch" id="close-search-modal">+</div>
+                <!-- Search Form -->
+                <form class="search-model-form" id="search-form">
+                  <label for="image-upload">Upload an Image:</label>
+                  <input type="file" id="image-upload" accept="image/*" />
+                  <button type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="section-container-items">
+      <div class="container">
+        <div class="row align-items-center h-100">
+          <div class="section col-md-6">
+            <h1>Welcome <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46"  fill="currentColor" class="bi bi-shop" style="color: #b54f89;" viewBox="0 0 16 16">
+              <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5M4 15h3v-5H4zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm3 0h-2v3h2z"/>
+            </svg></h1>
+            <h3>Shoes are not just accessories</h3>
+            <h3>they are the first step to </h3>
+            <h3>expressing who you are.</h3>
+            <a href="#!">
+              <button><i class="fas fa-shopping-cart"></i> Buy Now </button>
+            </a>
+          </div>
+
+          <div class="alta col-md-6 d-flex justify-content-lg-end align-items-center h-100">
+            <span class="alta-title">Find Your</span>
+            <span class="alta-title1">Favorite One</span>
+            <div class="polygon"><img src="https://i.pinimg.com/736x/04/48/dc/0448dc113bf7163e2e440091ff693699.jpg" alt="Smartwatch Image"></div>
+            
+          </div>
+          <div class="polygoner"><img src="https://i.pinimg.com/736x/6a/96/86/6a968613e27b9465619902c0f496a791.jpg" alt="Smartwatch Image" style="transform: translateX(20px) translateY(); height: 290px; width: 300px;"></div>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner" style="margin-bottom: 100px;">
+              <div class="carousel-item active">
+                <img src="https://i.pinimg.com/736x/10/9e/ec/109eec3ed27fd240ad4f4fe547bac08a.jpg" class="d-block w-100" alt="..." style="object-fit:scale-down; height: 60vh; width: 100%;">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.pinimg.com/736x/6a/34/9d/6a349d3c624899f7b7d5209b44eaa226.jpg" class="d-block w-100" alt="..." style="object-fit: scale-down; height: 60vh; width: 100%;">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.pinimg.com/736x/f1/b6/42/f1b6423c0de69b09592ebbfc6639f8c1.jpg" class="d-block w-100" alt="..." style="object-fit: scale-down; height: 60vh; width: 100%;">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.pinimg.com/736x/a6/d0/7e/a6d07e4a2033c4dbe63ee68c618a0323.jpg" class="d-block w-100" alt="..." style="object-fit: scale-down; height: 60vh; width: 100%;">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
+          
+          
+        </div>
+        <div class="polygones" >
+          <img 
+            src="https://i.pinimg.com/736x/e3/f1/5e/e3f15ecf7d8d3d7a7205141d85c12e91.jpg" 
+            alt="Smartwatch Image" 
+            style="height: 320px; width: 320px;"
+          >
+        </div>
+        
+      </div>
+       
+        
+        
+    </div>
+
+    
+   
+ 
+
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSs5Xb7V2XsC/JG7stKhH6RoFfmI0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js" integrity="sha384-KJ3o2DKtIkvYIKuV+1H+7QpP2EZzj5p4a0h5jcS8jFz9D7gcf/yW4AAt6LJzzT+u" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0Bbx+MKYeq+ILGSc8r+SoFC4hkpqI8AC5eRYGJhNdloJ8zH6" crossorigin="anonymous"></script>
+    
+    <script src="project.js" defer>
+      
+    </script>
+  
+
+  </body>
+</html>
