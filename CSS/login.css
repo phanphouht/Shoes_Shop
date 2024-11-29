@@ -1,0 +1,140 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://i.ibb.co/fvDfF8t/background.png');
+    background-size: cover;
+}
+
+.login-container {
+    width: 320px;
+    background:transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3); 
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 20px;
+    border-radius: 10px 20px;
+
+   
+    
+ 
+
+   
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: white;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-sizing: border-box;
+   
+}
+
+.captcha-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20 px;
+   
+
+
+}
+
+.captcha-container input[type="checkbox"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.captcha-container label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+
+}
+
+.captcha-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff7c20;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #e06c18;
+}
+
+.forgot-password {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #0073e6;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+.input-container {
+    position: relative; /* Make this container the positioning context for the icon */
+    width: 100%;
+    margin-bottom: 15px; /* Add spacing between fields */
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px 40px 10px 10px; /* Add space for the icon on the right */
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+    color: white;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none; /* Remove focus outline */
+    font-family: Arial, sans-serif;
+}
+
+.input-container input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Placeholder text color */
+}
+
+.input-container i {
+    position: absolute;
+    right: 15px; /* Position the icon on the right */
+    top: 35%; /* Align vertically in the middle */
+    transform: translateY(-50%); /* Correct vertical alignment */
+    color: rgba(255, 255, 255, 0.7); /* Icon color */
+    font-size: 18px;
+}
