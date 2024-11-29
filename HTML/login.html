@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form action="#" method="post">
+        <div class = "input-container"> 
+            <input type="text" placeholder="Username or Gmail " 
+            id="username" name="username" required>
+            <i class="fa-solid fa-user"></i>
+        </div>
+            
+          
+
+           <div class="input-container">
+            <input type="password"placeholder="Password" id="password" name="password" required>
+            <i class="fa-solid fa-lock"></i>
+          </div>
+
+            <div class="captcha-container">
+                <input type="checkbox" id="captcha" name="captcha" style="margin-bottom: 10px;">
+                <label for="captcha">  I'm not a robot
+                 <img src="../IMAGE/RecaptchaLogo.svg.png" alt="Robot icon" class="captcha-icon" >
+                 
+                </label>    
+            </div>
+
+            <button type="submit" class="login-button">Log In</button>
+            <a href="#" class="forgot-password">forget password?</a>
+        </form>
+    </div>
+    
+</body>
+</html>
