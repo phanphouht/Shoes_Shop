@@ -1,12 +1,14 @@
 body {
     font-family: "Poppins", sans-serif;
-    background-color: white;
+    background-color: black;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('https://i.ibb.co/fvDfF8t/background.png');
+    /* background:url('../IMAGE/back2\ img.webp') no-repeat; */
+    background-size:cover ;
+    background-position:center ;
     background-size: cover;
 }
 
@@ -16,7 +18,7 @@ body {
     border: 2px solid rgba(255, 255, 255, 0.3); 
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-    color: white;
+    color: black;
     padding: 20px;
     border-radius: 10px 20px;
 
@@ -56,8 +58,6 @@ input[type="password"] {
     display: flex;
     align-items: center;
     margin-bottom: 20 px;
-   
-
 
 }
 
@@ -118,8 +118,8 @@ input[type="password"] {
     padding: 10px 40px 10px 10px; /* Add space for the icon on the right */
     border: none;
     border-radius: 25px; /* Rounded corners */
-    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
-    color: white;
+    background: linear-gradient(to right,white); /* Gradient background */
+    color: black;
     font-size: 14px;
     box-sizing: border-box;
     outline: none; /* Remove focus outline */
@@ -127,7 +127,7 @@ input[type="password"] {
 }
 
 .input-container input::placeholder {
-    color: rgba(255, 255, 255, 0.7); /* Placeholder text color */
+    color: black(255, 255, 255, 0.7); /* Placeholder text color */
 }
 
 .input-container i {
@@ -135,6 +135,6 @@ input[type="password"] {
     right: 15px; /* Position the icon on the right */
     top: 35%; /* Align vertically in the middle */
     transform: translateY(-50%); /* Correct vertical alignment */
-    color: rgba(255, 255, 255, 0.7); /* Icon color */
+    color: black(255, 255, 255, 0.7); /* Icon color */
     font-size: 18px;
 }
