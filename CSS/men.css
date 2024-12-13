@@ -1,7 +1,9 @@
+
 .container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+
 }
 .viewBox {
     display: flex;
@@ -24,7 +26,12 @@ a.div.viewBox {
 }
 .container-page {
     display: flex;
+    margin: 20px;
+    min-width: 40%;
 }
 .foot-text {
+    margin: 50px;
+}
+#page-text {
     margin: 20px;
 }
