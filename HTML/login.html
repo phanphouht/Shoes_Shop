@@ -11,13 +11,10 @@
         <h1>Login</h1>
         <form action="#" method="post">
         <div class = "input-container"> 
-            <input type="text" placeholder="Username or Gmail " 
+            <input type="text" placeholder="Username or Gmail" 
             id="username" name="username" required>
             <i class="fa-solid fa-user"></i>
         </div>
-            
-          
-
            <div class="input-container">
             <input type="password"placeholder="Password" id="password" name="password" required>
             <i class="fa-solid fa-lock"></i>
@@ -36,6 +33,22 @@
             <a href="../HTML/register.html" class="forgot-password ;">Register?</a>
         </form>
     </div>
+    <div id="cookie-banner" style="display: none; background: #f4f4f4; padding: 10px; position: fixed; bottom: 0; width: 100%; text-align: center;">
+        This site uses cookies to enhance your experience. 
+        <button onclick="acceptCookies()">Accept</button>
+    </div>
     
+    <script>
+        function acceptCookies() {
+            setCookie("cookieConsent", "true", 30);
+            document.getElementById("cookie-banner").style.display = "none";
+        }
+    
+        if (!checkCookie("cookieConsent")) {
+            document.getElementById("cookie-banner").style.display = "block";
+        }
+    </script>
+    
+    <script src="../JS/cookies.js"></script>
 </body>
 </html>
