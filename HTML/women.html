@@ -10,6 +10,68 @@
     
 </head>
 <body>
+  <header class="header">
+    <div class="header-inner">
+      <div class="container p-lg-0">
+        <nav class="navbar navbar-expand-lg my-navbar">
+          <a class="navbar-brand" href="#">KSK Shop</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+              <i class="fas fa-bars" style="margin:5px 0px 0px 0px;"></i>
+            </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"><i class="fa-solid fa-house-flag" style="color: #b54f89;"></i> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../HTML/men.html"><i class="fa-solid fa-cart-shopping"style="color: #b54f89;"></i> Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../HTML/women.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tags" style="color: #b54f89;" viewBox="0 0 16 16">
+                  <path d="M3 2v4.586l7 7L14.586 9l-7-7zM2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586z"/>
+                  <path d="M5.5 5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m0 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M1 7.086a1 1 0 0 0 .293.707L8.75 15.25l-.043.043a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 0 7.586V3a1 1 0 0 1 1-1z"/>
+                </svg> Women</a>  <!--font in bootstrap -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-balloon-heart" style="color: #b54f89;" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398"/>
+                </svg> Resources</a>
+              </li>
+             
+              
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <a href="../HTML/login.html"><button type="button" class="btn btn" style="border-radius: 30px;">Sign In</button></a>
+              <li class="nav-item">
+                  <!-- Search Button -->
+                <button type="button" class="btn btn-secondary" style="border-radius: 30px;" id="open-search-modal" onclick="click()">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search-heart-fill" style="color: #b54f89;" viewBox="0 0 16 16">
+                    <path d="M6.5 13a6.47 6.47 0 0 0 3.845-1.258h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1A6.47 6.47 0 0 0 13 6.5 6.5 6.5 0 0 0 6.5 0a6.5 6.5 0 1 0 0 13m0-8.518c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018"/>
+                  </svg>
+                </button>
+              </li>
+             <!-- Search Modal -->
+          <div class="search-model" id="search-modal">
+            <div class="h-100 d-flex justify-content-center align-items-center">
+              <!-- Close Button -->
+              <div class="search-close-switch" id="close-search-modal">+</div>
+              <!-- Search Form -->
+              <form class="search-model-form" id="search-form">
+                <label for="image-upload">Upload an Image:</label>
+                <input type="file" id="image-upload" accept="image/*" />
+                <button type="submit">Search</button>
+    </form>
+  </div>
+</div>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
     <div>
         <h1>Women's Shoes</h1>
     </div>
@@ -412,7 +474,7 @@
             </div>
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="../WIMAGE/46130_pair_medium.avif" class="card-img-top" alt="96069">
+            <img src="../WIMAGE/46130_pair_medium.avif" class="card-img-top" alt="46130">
             <div class="card-body">
               <h5 class="card-title">Nike</h5>
               <p class="card-text"><a class="card-text" href="#">Men's Court Vision Mid <br>Sneaker</a></p>
@@ -420,7 +482,7 @@
             </div>
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="../IMAGE/96898_pair_medium.avif" class="card-img-top" alt="96898">
+            <img src="../WIMAGE/47241_pair_medium.avif" class="card-img-top" alt="47241">
             <div class="card-body">
               <h5 class="card-title">Nike</h5>
               <p class="card-text"><a class="card-text" href="#">Men's SB Charge Skate Shoe</a></p>
@@ -428,7 +490,47 @@
             </div>
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="../IMAGE/97167_pair_medium.avif" class="card-img-top" alt="97167">
+            <img src="../WIMAGE/47514_pair_medium.avif" class="card-img-top" alt="47514">
+            <div class="card-body">
+              <h5 class="card-title">Crocs</h5>
+              <p class="card-text"><a class="card-text" href="#">Men's Classic Fuzz Lined <br>Clog</a></p>
+              <button type="button" class="btn btn-warning">Order</button>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="../WIMAGE/57313_pair_medium.avif" class="card-img-top" alt="57313">
+            <div class="card-body">
+              <h5 class="card-title">Crocs</h5>
+              <p class="card-text"><a class="card-text" href="#">Men's Classic Fuzz Lined <br>Clog</a></p>
+              <button type="button" class="btn btn-warning">Order</button>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="../WIMAGE/59090_pair_medium.avif" class="card-img-top" alt="59090">
+            <div class="card-body">
+              <h5 class="card-title">Crocs</h5>
+              <p class="card-text"><a class="card-text" href="#">Men's Classic Fuzz Lined <br>Clog</a></p>
+              <button type="button" class="btn btn-warning">Order</button>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="../WIMAGE/69924_pair_medium.avif" class="card-img-top" alt="69924">
+            <div class="card-body">
+              <h5 class="card-title">Crocs</h5>
+              <p class="card-text"><a class="card-text" href="#">Men's Classic Fuzz Lined <br>Clog</a></p>
+              <button type="button" class="btn btn-warning">Order</button>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="../WIMAGE/69926_pair_medium.avif" class="card-img-top" alt="99926">
+            <div class="card-body">
+              <h5 class="card-title">Crocs</h5>
+              <p class="card-text"><a class="card-text" href="#">Men's Classic Fuzz Lined <br>Clog</a></p>
+              <button type="button" class="btn btn-warning">Order</button>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="../WIMAGE/70521_pair_medium.avif" class="card-img-top" alt="70521">
             <div class="card-body">
               <h5 class="card-title">Crocs</h5>
               <p class="card-text"><a class="card-text" href="#">Men's Classic Fuzz Lined <br>Clog</a></p>
